@@ -13,6 +13,8 @@ export default function Film(props) {
       .then(response => {
           // Bu kısmı log statementlarıyla çalışın
           // ve burdan gelen response'u 'movie' e aktarın
+          console.log(response.data);
+          setMovie(response.data);
       })
       .catch(error => {
         console.error(error);

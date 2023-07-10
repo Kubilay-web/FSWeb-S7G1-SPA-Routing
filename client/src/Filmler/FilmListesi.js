@@ -4,13 +4,13 @@ export default function FilmListesi(props) {
   return (
     <div className="movie-list">
       {props.movies.map(movie => (
-        <FilmDetayları key={movie.id} movie={movie} />
+        <FilmDetaylari key={movie.id} movie={movie} />
       ))}
     </div>
   );
   }
 
-function FilmDetayları(props) {
+function FilmDetaylari(props) {
   const { title, director, metascore } = props.movie;
 
   return (
